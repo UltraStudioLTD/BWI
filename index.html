@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>BWI (Basic Weather Information)</title>
+</head>
+
+<body>
+    <div class="bg">
+        <h1 class="Title"><span style="color: red;">B</span>asic<br><span style="color: green;">W</span>eather<br><span style="color: blue;">I</span>nformation</h1>
+        <br>
+        <input id="city_name" class="city_name" type="text" placeholder="Enter City" required>
+        <br>
+        <button id="submit" class="submit" onclick="search()">SUBMIT</button>
+        <button id="reset" class="reset" onclick="window.location.reload()">RESET</button>
+        <br><br>
+        <h2>===== Results =====</h2>
+        <h3 id="city"></h3>
+        <h4 id="longitude"></h4>
+        <h4 id="latitude"></h4>
+        <h4 id="weather"></h4>
+        <h4 id="temp"></h4>
+        <h4 id="feel_temp"></h4>
+        <h4 id="temp_min"></h4>
+        <h4 id="temp_max"></h4>
+        <h4 id="pressure"></h4>
+        <h4 id="humidity"></h4>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
